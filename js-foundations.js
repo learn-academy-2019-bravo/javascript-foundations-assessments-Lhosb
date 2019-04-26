@@ -62,14 +62,16 @@ var nouns = ["ducks", "elephants", "pangolin", "rhinoceros", "giraffes", "pengui
 
 let animalNums = () => {
   for (let i = 0; i < nums.length; i++) {
-    let concat = nums.map(x => `${x} ${nouns[i]}`)
-    console.log(concat[i]);
+    let concat = `${nums[i]} ${nouns[i]}`
+    console.log(concat);
   }
 }
 animalNums()
 
-// let concated = nums.map(v => `${v} ${nouns[nums.indexOf(v)]}`)
-// console.log(concated);
+  //without for loop
+    // let concated = nums.map(v => `${v} ${nouns[nums.indexOf(v)]}`)
+    // let concatJoin = concated.join(", ")
+    // console.log(concatJoin);
 
 // output should be: "9 ducks", etc
 
